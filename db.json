@@ -1,6 +1,11 @@
 {
 "bgGif" : "https://1.bp.blogspot.com/-tJK0156CC84/Xbfvd6XRWXI/AAAAAAAApDo/V8vTG_iSmOExtOMWW1WdPDYuchex0ctUwCLcBGAsYHQ/s1600/126ea33961233fde2e5c82f1578e951b.gif",
-"bg": "https://images.pexels.com/photos/2706654/pexels-photo-2706654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+"images" : [
+    "https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/03/08/16/55/abstract-4913016_960_720.png",
+    "https://cdn.pixabay.com/photo/2018/03/12/11/08/galaxy-3219390_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2018/07/18/17/10/cosmos-3546765_960_720.jpg"
+],
 "title": "Quiz CSS da Alura",
 "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
 "questions": [
