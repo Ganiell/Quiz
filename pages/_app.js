@@ -41,8 +41,13 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/_tV5LEBDs7w?controls=0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </ThemeProvider>
     </>
   )
 }
 
+// musicas 
+// https://www.youtube.com/embed/-ROAj71OiUU?controls=0?rel=0&autoplay=1
+// https://www.youtube.com/embed/Np8cEtbLis4?controls=0?rel=0&autoplay=1
+// https://www.youtube.com/embed/_tV5LEBDs7w?controls=0?rel=0&autoplay=1
