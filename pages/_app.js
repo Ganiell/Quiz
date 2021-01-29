@@ -1,6 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json'
 import Head from 'next/head'
+import BackgroundImg from '../src/components/BackgroundImg'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -32,6 +33,20 @@ const theme = db.theme
 
 
 export default function App({ Component, pageProps }) {
+
+
+  const [indexImg, setIndexImg] = React.useState(0)
+      React.useEffect(() => {
+        setTimeout(()=> {
+          if(indexImg < db.images.length - 1) {
+            setIndexImg(indexImg + 1)
+          } else {
+            setIndexImg(0)
+          }
+        }, 1 * 7000)
+      }, [indexImg])
+
+
   return (
     <>
       <Head>
@@ -39,9 +54,11 @@ export default function App({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet"/>
       </Head>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/_tV5LEBDs7w?controls=0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <BackgroundImg image={db.images[indexImg]}>
+          <GlobalStyle />
+          <Component {...pageProps}> 
+          </Component>
+        </BackgroundImg>
       </ThemeProvider>
     </>
   )

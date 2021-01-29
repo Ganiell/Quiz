@@ -1,11 +1,11 @@
 body {
     background-color: #483e5a;
-    background: #6b5394be;
+    background: #5d34a3c4;
    
     color: rgba(255, 255, 255, 0.733);
 }
 body {
-    color: #194d66;
+    color: #1181b4e7;
 }
 div {
     color: #85e0ec;
@@ -16,3 +16,13 @@ button:disabled{
     border: none;
     cursor: no-drop;
   }
+
+a {
+    color: #37b2c2a9;
+}
+p {
+    color: rgba(255, 0, 89, 0.823);
+}
+h2 {
+    color: rgb(0, 128, 79);
+}

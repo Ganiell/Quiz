@@ -1,4 +1,5 @@
 {
+"bg" : "https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg",
 "bgGif" : "https://1.bp.blogspot.com/-tJK0156CC84/Xbfvd6XRWXI/AAAAAAAApDo/V8vTG_iSmOExtOMWW1WdPDYuchex0ctUwCLcBGAsYHQ/s1600/126ea33961233fde2e5c82f1578e951b.gif",
 "images" : [
     "https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg",
@@ -6,29 +7,95 @@
     "https://cdn.pixabay.com/photo/2018/03/12/11/08/galaxy-3219390_960_720.jpg",
     "https://cdn.pixabay.com/photo/2018/07/18/17/10/cosmos-3546765_960_720.jpg"
 ],
-"title": "Quiz CSS da Alura",
-"description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+"title": "Quiz sobre conhecimentos gerais XD",
+"description": "Teste seus conhecimentos em cima de curiosidades do mundo, cultura e suas tecnologias!!",
 "questions": [
     {
-    "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-    "title": "Como fazer um seletor por id via CSS?",
-    "description": "Essa é pra aquecer",
-    "answer": 2,
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "Quantas casas decimais tem o número pi?",
+    "description": "Dica pra quem não lembra o que é pi: π",
+    "answer": 1,
     "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Duas",
+        "Infinitas",
+        "Centenas",
+        "Vinte",
+        "Milhares"
     ]
     },
     {
-    "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-    "title": "Como fazer um background gradiente com css?",
-    "description": "Faz tempo em haha",
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "Quais são os três predadores do reino animal reconhecidos pela habilidade de caçar em grupo, se camuflar para surpreender as presas e possuir sentidos apurados, respectivamente:",
+    "description": "",
     "answer": 0,
     "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Hiena, urso branco e lobo cinzento",
+        "Tubarão branco, crocodilo e sucuri",
+        "Orca, onça e tarântula"
+    ]
+    },
+    {
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "Qual o maior animal terrestre?",
+    "description": "Dica: tem um pescoço bem grande rsrs",
+    "answer": 2,
+    "alternatives": [
+        "Baleia Azul",
+        "Dinossauro",
+        "Elefante africano",
+        "Tubarão Branco",
+        "Girafa"
+    ]
+    },
+    {
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "As pessoas de qual tipo sanguíneo são consideradas doadores universais?",
+    "description": "",
+    "answer": 1,
+    "alternatives": [
+        "Tipo A",
+        "Tipo O",
+        "Tipo B",
+        "Tipo AB",
+        "Tipo ABO"
+    ]
+    },
+    {
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "Que animal gruguleja?",
+    "description": "Essa ai ta facíl vai",
+    "answer": 4,
+    "alternatives": [
+        "O pavão",
+        "A garça",
+        "O papagaio",
+        "A cacatua",
+        "O peru"
+    ]
+    },
+    {
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "Como eu falo para uma pessoa entrar na minha casa?",
+    "description": "Vamos exercitar o inglês!!",
+    "answer": 1,
+    "alternatives": [
+        "Go in",
+        "Come in",
+        "Go inside",
+        "Get up"
+    ]
+    },
+    {
+    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "title": "O que a palavra legend significa em português?",
+    "description": "",
+    "answer": 3,
+    "alternatives": [
+        "Legenda",
+        "Conto",
+        "História",
+        "Lenda",
+        "Legendário"
     ]
     }
 ],
