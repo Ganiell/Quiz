@@ -55,7 +55,7 @@ export default function Quiz(){
 
 
     return(
-        <div>
+        <BackgroundImg.ContainerBase>
             <Head>
                 <title>Quiz</title>
             </Head>
@@ -73,7 +73,7 @@ export default function Quiz(){
                 {screenState === screenStates.RESULT && <Result results={results}/>}
             </Container>
             <GitHubCorner/>
-        </div>
+        </BackgroundImg.ContainerBase>
     )
 }
 

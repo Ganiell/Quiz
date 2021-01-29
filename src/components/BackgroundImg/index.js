@@ -3,10 +3,16 @@ import db from '../../../db.json'
 
 
 const BackgroundImg = styled.main`
+   flex: 1;
+   background-size: cover;
+   background-position: center;
   background-image: url(${props => props.image});
   @media screen and (max-width: 500px) {
     background-image: url(${db.bgGif});
   }
+ 
+`
+BackgroundImg.ContainerBase = styled.div`
   flex: 1;
   transition: all 3s;
   background-size: cover;
@@ -16,4 +22,5 @@ const BackgroundImg = styled.main`
   justify-content: flex-start;
   padding: 0px 7%;
 `
+
 export default BackgroundImg

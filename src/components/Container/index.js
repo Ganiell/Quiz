@@ -5,10 +5,10 @@ import db from '../../../db.json'
 const Container = styled.section`
   background-color: #683ab765;
   width: 500px;
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     width: 320px;
     margin: 0 auto;
-  }
+  } */
   margin: 20px 0;
   min-height: 600px;
   border-radius: 20px;

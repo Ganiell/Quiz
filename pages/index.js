@@ -34,7 +34,7 @@ export default function Home() {
 
 
   return(
-      <div>
+      <BackgroundImg.ContainerBase>
         <Head>
           <title>Quiz</title>
         </Head>
@@ -69,7 +69,7 @@ export default function Home() {
           </Art.Art2>
         </Container>
         <GitHubCorner projectUrl="https://github.com/Ganiell"/>
-      </div>
+      </BackgroundImg.ContainerBase>
   )
 }
 
