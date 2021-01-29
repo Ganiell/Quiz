@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }) {
           <GlobalStyle />
           <Component {...pageProps}> 
           </Component>
-          <iframe width="0" height="0" src="https://www.youtube.com/embed/-ROAj71OiUU?controls=0?rel=0&autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="0" height="0" src="https://www.youtube.com/embed/-ROAj71OiUU?controls=0?rel=0&autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
         </BackgroundImg>
       </ThemeProvider>
     </>
