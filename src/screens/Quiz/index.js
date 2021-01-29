@@ -1,14 +1,13 @@
-import db from '../db.json'
-import BackgroundImg from '../src/components/BackgroundImg'
-import Art from '../src/components/Art'
-import Container from '../src/components/Container'
-import GitHubCorner from '../src/components/GitHubCorner'
+// import db from '../../../db.json'
+import BackgroundImg from '../../../src/components/BackgroundImg'
+import Container from '../../../src/components/Container'
+import GitHubCorner from '../../../src/components/GitHubCorner'
 import Head from 'next/head'
-import Button from '../src/components/Button'
+import Button from '../../../src/components/Button'
 import styled from 'styled-components'
-import Questions from '../src/components/Question'
+import Questions from '../../../src/components/Question'
 import { useState } from 'react'
-
+import { useRouter } from 'next/router'
 
 const screenStates = {
     QUIZ: 'QUIZ',
@@ -16,13 +15,13 @@ const screenStates = {
     RESULT: 'RESULT'
 }
 
-export default function Quiz(){
-    const [screenState, setScreenState] = React.useState(screenStates.LOADING)
+export default function Quizscreen( { externalQuestions }){
+    var [screenState, setScreenState] = React.useState(screenStates.LOADING)
     const [results, setResults] = useState([])
     const [currentQuestion, setCurrentQuestion] = React.useState(0)
     const questionIndex = currentQuestion
-    const question = db.questions[questionIndex]
-    const totalQuestion = db.questions.length
+    const question = externalQuestions[questionIndex]
+    const totalQuestion = externalQuestions.length
 
     function addResult(result) {
         setResults([...results, result])
@@ -32,15 +31,15 @@ export default function Quiz(){
     // Nasce === didMount
     // atualizado == willUpdate
     // morre == willUnmount 
+  
 
     React.useEffect(() => {
         setTimeout(() => {
             setScreenState(screenStates.QUIZ)
-        }, 1 * 1000)
+        }, 1 * 3000)
         // nasce === didMount
-     })
+     }, [])
 
-     console.log(screenState)
 
 
     function handleSubmit() {
@@ -60,6 +59,7 @@ export default function Quiz(){
                 <title>Quiz</title>
             </Head>
             <Container>
+                
                 {screenState === screenStates.QUIZ && (
                     <Questions
                         question={question}
@@ -100,19 +100,30 @@ function QuestionLoad() {
 }
 
 function Result( { results } ){
+    const router = useRouter()
+    // {console.log(router.query[""].value)}
     return(
         <ResultBase>
+            
+            <h1>Parabéns {router.query.name}, você terminou o Quiz :)</h1>
             <span>Acertou {results.filter((x) => x).length}  
             {` `} e Errou {results.filter((x) => !x).length} </span>
 
             <ul>
                 {results.map((result, resultIndex) => (
                     <li key={`result__${resultIndex}`}>
-                        Q. {resultIndex + 1} {result === true ? `Errou ❌` : 'Acertou ✔️'}
+                        Q. {resultIndex + 1} {result === true ? `Acertou ✔️` : 'Errou ❌'}
                     </li>
                 ))}                     
             </ul>
-            <Button>Refazer o Quiz</Button>
+            <form onSubmit={function (event) {
+                event.preventDefault()
+                router.push(`/`)
+                // setScreenState(screenStates.LOADING)
+                // setTimeOut(() => router.push(`/`), 1*2000)
+            }}>
+                <Button as="button">Refazer o Quiz</Button>
+            </form>
         </ResultBase>
     )
 }

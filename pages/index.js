@@ -1,6 +1,7 @@
 import React from 'react'
 import db from '../db.json'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 import BackgroundImg from '../src/components/BackgroundImg'
 import Art from '../src/components/Art'
@@ -9,7 +10,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import Head from 'next/head'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
-
+import Link from '../src/components/Link'
 
 export default function Home() {
   const router = useRouter()
@@ -38,17 +39,33 @@ export default function Home() {
         <Head>
           <title>Quiz</title>
         </Head>
-        <Container>
+        <Container as={motion.section}
+          transition={{delay: 0.1, duration: 0.1}}
+          variants={{
+            show: {opacity: 1, x: '0'},
+            hidden: {opacity: 0, x: '-120%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Container.TituloQuiz>
             <h1>{db.title}</h1>
           </Container.TituloQuiz>
-          <Art>
+          <Art as={motion.section}
+            transition={{delay: 0.2, duration: 0.2}}
+            variants={{
+              show: {opacity: 1, x: '0'},
+              hidden: {opacity: 0, x: '-120%' },
+            }}
+            initial="hidden"
+            animate="show"
+          >
               <p>
                 {db.description} 
               </p>
               <form onSubmit={function (event) {
                 event.preventDefault()
-                router.push(`/quiz?=name=${name}`)
+                router.push(`/quiz?name=${name}`)
               }}>
                 <Input 
                   maxLength={20}
@@ -58,14 +75,44 @@ export default function Home() {
                   value={name}
                 />
                 <Button 
+                  as={"button"}                
                   type="submit" 
                   disabled={!name}>
                   Jogar {name}
                 </Button>
               </form>
           </Art>
-          <Art.Art2>
+          <Art.Art2 as={motion.section}
+              transition={{delay: 0.3, duration: 0.3}}
+              variants={{
+                show: {opacity: 1, x: '0'},
+                hidden: {opacity: 0, x: '-120%' },
+              }}
+              initial="hidden"
+              animate="show"
+            >
             <h2>Tem também os Quizes da Galera :)</h2>
+              <ul>
+                {db.external.map((linkExterno)=> {
+                  const [projectName, gitHubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.')
+                  return ( 
+                      <li style={{listStyle: "none", padding: "4px 25px", marginBottom: "0px 20px", textAlign: "center"}}
+                        key={linkExterno}>
+                        <Art.Quizes 
+                          as={Link} 
+                          href={`/quiz/${projectName}__${gitHubUser}`}>
+                          {`${projectName}`}
+                        </Art.Quizes>
+                      </li>
+                    )
+                   }
+                   )
+                   }
+              </ul>
           </Art.Art2>
         </Container>
         <GitHubCorner projectUrl="https://github.com/Ganiell"/>

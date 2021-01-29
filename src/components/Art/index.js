@@ -63,10 +63,23 @@ const Art = styled.article`
   }
   transition: all 0.5s;
 `
+
+Art.Quizes = styled.a`
+    display: block;
+    border-radius: 8px;
+    border: #4f2891 solid 4px;
+    padding: 5px 10px;
+    background: #6946a5a9;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+`
+
 Art.Art2 = styled.article`
   background-color: #007ab279;
   width: 90%;
-  margin: 40px auto 25px auto;
+  padding-bottom: 10px;
+  margin: 30px auto 20px auto;
   min-height: 31%;
   border-radius: 20px;
   @media screen and (max-width: 500px) {
@@ -80,6 +93,20 @@ Art.Art2 = styled.article`
     text-align: center;
   }
   transition: all 0.5s;
+  ul {
+    li {
+      a {
+        display: block;
+        border-radius: 8px;
+        border: #4f2891 solid 4px;
+        padding: 5px 10px;
+        background: #6946a5a9;
+        font-size: 1.3em;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 `
 
 export default Art

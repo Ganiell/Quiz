@@ -100,7 +100,9 @@
     }
 ],
 "external": [
-    ""
+    "https://internet-quiz.johnmaroeli.vercel.app/",
+    "https://animequiz.ffsf-filho.vercel.app/",
+    "https://churrasquiz.reginokaa.vercel.app/"
 ],
 "theme": {
     "colors": {

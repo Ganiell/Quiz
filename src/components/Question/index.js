@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import Button from '../Button'
+import BackLinkArrow from '../BackLinkArrow'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const QuestionBase = styled.a`
     background: #146f99b8;
@@ -7,9 +10,6 @@ const QuestionBase = styled.a`
     font-size: 1.3em;
     border: solid 2px #146f99;
     box-shadow: 0px 0px 6px 2px #146f99;
-    @media screen and (max-width: 600px) {
-        font-size: 1.2em;
-    }
     padding: 10px;
     display: block;
     width: 80%;
@@ -18,6 +18,12 @@ const QuestionBase = styled.a`
     transition: all 0.3s;
     :hover{
         background: #157aa8da;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 1.2em;
+        :hover {
+            background-color: none;
+        }
     }
 `
 const FormBase = styled.form`
@@ -93,8 +99,9 @@ export default function Questions({
     return(
         <section>
             <NumQuestion>
+                
                 <p>
-                    pergunta {questionIndex + 1} de {totalQuestion}
+                <BackLinkArrow href="/"/> pergunta {questionIndex + 1} de {totalQuestion}
                 </p>
             </NumQuestion>
             <DescriptionBase>
@@ -137,7 +144,8 @@ export default function Questions({
                         </QuestionBase>     
                     )
                 })}
-                <Button type="submit" disabled={!hasQuestionSubmited} >Confirmar</Button>
+                <Button  as={"button"} 
+                type="submit" disabled={!hasQuestionSubmited} >Confirmar</Button>
             </FormBase>
 
         </section>
