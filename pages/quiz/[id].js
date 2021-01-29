@@ -29,9 +29,9 @@ export async function getServerSideProps(contex) {
         throw new Error('Falha em pegar os dados')
     })
     .then((respostaConvertidaEmObjeto) => respostaConvertidaEmObjeto)
-    // .catch((err) => {
-    //     console.error(err)
-    // })
+    .catch((err) => {
+        console.error(err)
+    })
 
     return{
         props: {
