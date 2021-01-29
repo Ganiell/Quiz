@@ -57,8 +57,8 @@ export default function App({ Component, pageProps }) {
         <BackgroundImg image={db.images[indexImg]}>
           <GlobalStyle />
           <Component {...pageProps}> 
+             <iframe width="1" height="1" src="https://www.youtube.com/embed/_tV5LEBDs7w?controls=0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Component>
-          <iframe width="1" height="1" src="https://www.youtube.com/embed/_tV5LEBDs7w?controls=0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </BackgroundImg>
       </ThemeProvider>
     </>
