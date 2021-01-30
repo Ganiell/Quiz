@@ -103,13 +103,27 @@ Art.Art2 = styled.article`
       margin-left: -37px;
       a {
         display: block;
-        border-radius: 8px;
-        border: #4f2891 solid 4px;
+        border-radius: 12px;
+        border: #4f2891 solid 3px;
         padding: 5px 10px;
+        box-shadow: 0 0 10px 1px #4f2891;
         background: #6946a5a9;
         font-size: 1.3em;
         color: white;
         text-decoration: none;
+        transition: all 0.6s;
+        :hover{
+          border: solid 3px #ac85ec;
+          box-shadow: 0 0 10px 3px #ac85ec;
+          background: #7e56c4d2;
+          transition: all 0.8s;
+        }
+        :active{
+          transition: all 0.2s;
+          border: solid 3px #bc79e2;;
+          box-shadow: 0 0 10px 3px #bc79e2;
+          background: #a556c4c2;
+        }
       }
     }
   }

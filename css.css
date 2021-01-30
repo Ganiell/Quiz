@@ -5,10 +5,10 @@ body {
     color: rgba(255, 255, 255, 0.733);
 }
 body {
-    color: #1181b4e7;
+    color: #592cd4c7;
 }
 div {
-    color: #85e0ec;
+    color: #ac85ec;
 }
 button:disabled{
     background: rgba(128, 128, 128, 0.438);
@@ -25,4 +25,9 @@ p {
 }
 h2 {
     color: rgb(0, 128, 79);
+}
+h3 {
+    border: solid 3px #bc79e2;;
+    box-shadow: 0 0 10px 3px #bc79e2;
+    background: #a556c4c2;
 }
