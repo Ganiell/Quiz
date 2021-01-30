@@ -91,10 +91,16 @@ Art.Art2 = styled.article`
   h2 {
     font-size: 1.3em;
     text-align: center;
+    padding: 0 20px;
   }
   transition: all 0.5s;
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     li {
+      width: 100%;
+      margin-left: -37px;
       a {
         display: block;
         border-radius: 8px;
