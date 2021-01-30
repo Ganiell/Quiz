@@ -74,7 +74,6 @@ Art.Quizes = styled.a`
     color: white;
     text-decoration: none;
 `
-
 Art.Art2 = styled.article`
   background-color: #007ab279;
   width: 90%;
@@ -107,22 +106,24 @@ Art.Art2 = styled.article`
         border: #4f2891 solid 3px;
         padding: 5px 10px;
         box-shadow: 0 0 10px 1px #4f2891;
-        background: #6946a5a9;
+        background: ${({disabled}) => disabled === true ? '#6946a5a9' : '#6b5394be'};
         font-size: 1.3em;
-        color: white;
+        color:${({disabled}) => disabled === true ? 'white' : 'rgba(169, 169, 169, 0.342)'};
         text-decoration: none;
+        cursor: ${({disabled}) => disabled === true ? 'pointer' : 'no-drop'};
         transition: all 0.6s;
         :hover{
-          border: solid 3px #ac85ec;
-          box-shadow: 0 0 10px 3px #ac85ec;
-          background: #7e56c4d2;
+          border:  ${({disabled}) => disabled === true ? 'solid 3px #ac85ec' : '#4f2891 solid 3px'};
+          box-shadow:  ${({disabled}) => disabled === true ? '0 0 10px 3px #ac85ec' : '0 0 10px 1px #4f2891'};
+          background: ${({disabled}) => disabled === true ? '#7e56c4d2' : '#6b5394be'};
           transition: all 0.8s;
         }
         :active{
           transition: all 0.2s;
-          border: solid 3px #bc79e2;;
-          box-shadow: 0 0 10px 3px #bc79e2;
-          background: #a556c4c2;
+          border:  ${({disabled}) => disabled === true ? 'solid 3px #bc79e2' : '#4f2891 solid 3px'};
+          box-shadow:  ${({disabled}) => disabled === true ? '0 0 10px 3px #bc79e2' : '0 0 10px 1px #4f2891'};
+          background: ${({disabled}) => disabled === true ? '#a556c4c2' : '#6b5394be'};
+
         }
       }
     }

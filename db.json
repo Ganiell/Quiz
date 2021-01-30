@@ -11,7 +11,7 @@
 "description": "Teste seus conhecimentos em cima de curiosidades do mundo, cultura e suas tecnologias!!",
 "questions": [
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "Quantas casas decimais tem o número pi?",
     "description": "Dica pra quem não lembra o que é pi: π",
     "answer": 1,
@@ -24,7 +24,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "Quais são os três predadores do reino animal reconhecidos pela habilidade de caçar em grupo, se camuflar para surpreender as presas e possuir sentidos apurados, respectivamente:",
     "description": "",
     "answer": 0,
@@ -35,7 +35,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "Qual o maior animal terrestre?",
     "description": "Dica: tem um pescoço bem grande rsrs",
     "answer": 2,
@@ -48,7 +48,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "As pessoas de qual tipo sanguíneo são consideradas doadores universais?",
     "description": "",
     "answer": 1,
@@ -61,7 +61,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "Que animal gruguleja?",
     "description": "Essa ai ta facíl vai",
     "answer": 4,
@@ -74,7 +74,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "Como eu falo para uma pessoa entrar na minha casa?",
     "description": "Vamos exercitar o inglês!!",
     "answer": 1,
@@ -86,7 +86,7 @@
     ]
     },
     {
-    "image": "https://gifimage.net/wp-content/uploads/2017/11/interrogacion-gif-animado-sin-fondo-3.gif",
+    "image": "https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif",
     "title": "O que a palavra legend significa em português?",
     "description": "",
     "answer": 3,
@@ -102,7 +102,7 @@
 "external": [
     "https://internet-quiz.johnmaroeli.vercel.app/",
     "https://animequiz.ffsf-filho.vercel.app/",
-    "https://alura-quiz-base.abnner13.vercel.app/"
+    "https://ghibliquiz.ygoryamanaca.vercel.app/"  
 ],
 "theme": {
     "colors": {

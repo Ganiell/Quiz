@@ -90,6 +90,7 @@ export default function Home() {
               }}
               initial="hidden"
               animate="show"
+              disabled={!!name}
             >
             <h2>Tem também os Quizes da Galera :)</h2>
               <ul>
@@ -104,7 +105,7 @@ export default function Home() {
                         key={linkExterno}>
                         <Art.Quizes 
                           as={Link} 
-                          href={`/quiz/${projectName}__${gitHubUser}`}>
+                          href={name ? `/quiz/${projectName}__${gitHubUser}` : '#'}>
                           {`${projectName}`}
                         </Art.Quizes>
                       </li>

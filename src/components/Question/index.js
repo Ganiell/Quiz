@@ -3,6 +3,7 @@ import Button from '../Button'
 import BackLinkArrow from '../BackLinkArrow'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { delBasePath } from 'next/dist/next-server/lib/router/router'
 
 const QuestionBase = styled.a`
     background: #146f99b8;
@@ -80,6 +81,12 @@ const DescriptionBase = styled.div`
             padding: 0 10px;            
         }
     }
+    img {
+        width: 300px;
+        border-radius: 20px;
+        border: solid 3px teal;
+        box-shadow: 0 0 7px 2px teal;
+    }
 `
 
 
@@ -95,6 +102,7 @@ export default function Questions({
     const isCorrect = selectAlternative === question.answer
     const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false)
     const hasQuestionSubmited = selectAlternative !== undefined
+    const errorImg = 'https://media0.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif'
 
     return(
         <section>
@@ -105,6 +113,8 @@ export default function Questions({
                 </p>
             </NumQuestion>
             <DescriptionBase>
+                {errorImg !== question.image && <img srcSet={question.image}/>}
+                {/* {screenState === screenStates.LOADING && <QuestionLoad/>} */}
                 <h2>{question.title}</h2>
                 <p>{question.description}</p>
             </DescriptionBase>
