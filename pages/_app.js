@@ -50,6 +50,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/4126/4126017.svg?token=exp=1611974406~hmac=3135528bda562f918c57d127117d793d" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet"/>
       </Head>

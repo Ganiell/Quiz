@@ -9,7 +9,7 @@ const Container = styled.section`
     width: 320px;
     margin: 0 auto;
   } */
-  margin: 20px 0;
+  margin: 50px 0 10px 0;
   min-height: 600px;
   border-radius: 20px;
   border: 3px solid #50b3e0;
