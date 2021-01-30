@@ -86,6 +86,9 @@ const DescriptionBase = styled.div`
         border-radius: 20px;
         border: solid 3px teal;
         box-shadow: 0 0 7px 2px teal;
+        @media screen and (max-width: 600px) {
+            width: 200px;
+        }
     }
 `
 

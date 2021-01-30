@@ -41,9 +41,6 @@ export default function Quiz(){
         // nasce === didMount
      }, [])
 
-     const router = useRouter()
-     console.log(router.query.name)
-
     function handleSubmit() {
         const nextQuestion = questionIndex + 1
         if(nextQuestion < totalQuestion) {
@@ -103,7 +100,6 @@ function QuestionLoad() {
 
 function Result( { results } ){
     const router = useRouter()
-    // {console.log(router.query[""].value)}
     return(
         <ResultBase>
             

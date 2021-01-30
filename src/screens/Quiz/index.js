@@ -101,7 +101,6 @@ function QuestionLoad() {
 
 function Result( { results } ){
     const router = useRouter()
-    // {console.log(router.query[""].value)}
     return(
         <ResultBase>
             
@@ -132,7 +131,7 @@ const ResultBase = styled.article`
     width: 90%;
     margin: 30px auto;
     span {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bolder;
     }
     ul{

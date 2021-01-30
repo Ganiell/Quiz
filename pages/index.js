@@ -105,7 +105,7 @@ export default function Home() {
                         key={linkExterno}>
                         <Art.Quizes 
                           as={Link} 
-                          href={name ? `/quiz/${projectName}__${gitHubUser}` : '#'}>
+                          href={name ? `/quiz/${projectName}__${gitHubUser}?name=${name}` : '#'}>
                           {`${projectName}`}
                         </Art.Quizes>
                       </li>
