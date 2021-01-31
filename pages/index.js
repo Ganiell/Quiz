@@ -10,15 +10,12 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import Head from 'next/head'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
+import LoadingSpinner from '../src/components/LoadingSpinner'
 import Link from '../src/components/Link'
 
 export default function Home() {
   const router = useRouter()
   const [name, setName] = React.useState('')
-
-
-
-  
 
 
 //   let arrayImg = db.images
@@ -95,24 +92,29 @@ export default function Home() {
             <h2>Tem também os Quizes da Galera :)</h2>
               <ul>
                 {db.external.map((linkExterno)=> {
+                  const [check, setCheck] = React.useState(false) 
                   const [projectName, gitHubUser] = linkExterno
                   .replace(/\//g, '')
                   .replace('https:', '')
                   .replace('.vercel.app', '')
                   .split('.')
                   return ( 
-                      <li style={{listStyle: "none", padding: "4px 25px", marginBottom: "0px 20px", textAlign: "center"}}
+                      <li style={{listStyle: "none", padding: "4px 25px", marginBottom: "0px 20px", textAlign: "center"}}  
+                      onClick={()=>{
+                        !!name ? setCheck(true) : setCheck(false)   
+                        }}
                         key={linkExterno}>
                         <Art.Quizes 
                           as={Link} 
                           href={name ? `/quiz/${projectName}__${gitHubUser}?name=${name}` : '#'}>
-                          {`${projectName}`}
-                        </Art.Quizes>
+                          {`${projectName}`} {!!name == true && check && <LoadingSpinner/>}
+                        </Art.Quizes> 
                       </li>
                     )
                    }
                    )
                    }
+                   
               </ul>
           </Art.Art2>
         </Container>
@@ -120,4 +122,5 @@ export default function Home() {
       </BackgroundImg.ContainerBase>
   )
 }
+
 
