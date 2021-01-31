@@ -102,6 +102,7 @@ Art.Art2 = styled.article`
       margin-left: -37px;
       a {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         border-radius: 12px;
         border: #4f2891 solid 3px;
